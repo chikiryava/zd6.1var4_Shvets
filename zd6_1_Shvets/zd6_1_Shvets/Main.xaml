@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd6_1_Shvets.Main"
+              >
+    <CarouselPage.Resources >
+        <StyleSheet Source="/mystyles.css" />
+    </CarouselPage.Resources>
+    <ContentPage>
+        <StackLayout Orientation="Vertical" Margin="0,0,0,0" BackgroundColor="White">
+            <StackLayout Orientation="Horizontal" Margin="10,10,0,0" >
+                <Button StyleId="button1" Margin="0,0,0,0"  Text="Static"/>
+                <Button StyleId="button2"  Text="Static"/>
+                <Button StyleId="button3"  Text="Static"/>
+                <Slider WidthRequest="90" StyleId="slider" ThumbColor="#00ffffff" MinimumTrackColor="Green" MaximumTrackColor="Gray"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button StyleId="button1" Margin="10,0,0,0"  Text="Hover"/>
+                <Button StyleId="button2"  Text="Hover"/>
+                <Button StyleId="button3"  Text="Hover"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button StyleId="button1" Margin="10,0,0,0"  Text="Pressed"/>
+                <Button StyleId="button2"  Text="Pressed"/>
+                <Button StyleId="button3"  Text="Pressed"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage>
+    <ContentPage>       
+        <StackLayout>
+            <Label Text="Red" FontSize="Medium" HorizontalOptions="Center" />
+            <BoxView Color="Red" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage>
+</CarouselPage>
